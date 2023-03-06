@@ -1,0 +1,6 @@
+name: HologramAPI
+description: Handles everything Hologram related
+version: ${project.version}
+main: optic_fusion1.hologram.HologramAPI
+author: Optic_Fusion1
+api-version: 1.19
