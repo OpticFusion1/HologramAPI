@@ -4,7 +4,6 @@ import optic_fusion1.hologram.animation.AnimationHandler;
 import org.bukkit.Location;
 import org.bukkit.entity.ArmorStand;
 import org.bukkit.entity.EntityType;
-import org.bukkit.entity.Player;
 
 /**
  * Class representing a hologram.
@@ -27,14 +26,12 @@ public class Hologram {
     /**
      * Constructs a new {@code Hologram} instance with the given parameters.
      *
-     * @param orbs instance of the Orbs class
      * @param location the location of the hologram
-     * @param seconds the number of seconds for the hologram to display
-     * @param player the player that created the hologram
+     * @param text the text for the title
      */
     // TODO: Auto-Add to HologramManager
-    public Hologram(Location location, int seconds, Player player) {
-        title = createEntity(location, player, seconds);
+    public Hologram(Location location, String text) {
+        title = createEntity(location, text);
         animationHandler = new AnimationHandler();
     }
 
@@ -54,18 +51,6 @@ public class Hologram {
         entity.setCollidable(false);
         entity.setVisible(false);
         return entity;
-    }
-
-    /**
-     * Spawns a new Hologram using the given parameters.
-     *
-     * @param location the location of the entity
-     * @param player the player that created the entity
-     * @param seconds the number of seconds for the entity to display
-     * @return the created ArmorStand entity for the title
-     */
-    private ArmorStand createEntity(Location location, Player player, int seconds) {
-        return createEntity(location, "§l§b" + player.getName() + "'s Orb §7(" + seconds + "s)");
     }
 
     /**
