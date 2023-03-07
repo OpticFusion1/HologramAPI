@@ -44,7 +44,7 @@ public abstract class AnimationTask {
     /**
      * Constructs a new {@code AnimationTask} instance.
      *
-     * @param orbs a reference to the main plugin class
+     * @param plugin a reference to the main plugin class
      * @param hologram a reference to the Hologram the task will be performed on
      * @param seconds the duration of the task in seconds
      * @param player a reference to the player who created the hologram

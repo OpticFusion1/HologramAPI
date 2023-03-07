@@ -8,7 +8,8 @@ import org.bukkit.plugin.Plugin;
 import org.bukkit.util.EulerAngle;
 
 /**
- * The {@code HeadRotationAnimationTask} class is an implementation of {@link AnimationTask} that rotates the head of the title armor stand of the hologram associated with the task.
+ * The {@code HeadRotationAnimationTask} class is an implementation of {@link AnimationTask} that 
+ * rotates the head of the title armor stand of the hologram associated with the task.
  */
 public class HeadRotationAnimationTask extends AnimationTask {
 

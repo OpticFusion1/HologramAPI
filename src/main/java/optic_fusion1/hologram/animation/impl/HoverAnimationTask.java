@@ -13,7 +13,8 @@ import org.bukkit.event.Listener;
 import org.bukkit.plugin.Plugin;
 
 /**
- * The HoverAnimationTask class extends the {@link AnimationTask} class and implements the Bukkit {@link Listener} interface. It creates a hovering animation for a {@link Hologram} that follows the first online player.
+ * The HoverAnimationTask class extends the {@link AnimationTask} class and implements the Bukkit {@link Listener} interface. 
+ * It creates a hovering animation for a {@link Hologram} that follows the first online player.
  */
 public class HoverAnimationTask extends AnimationTask implements Listener {
 
@@ -33,7 +34,7 @@ public class HoverAnimationTask extends AnimationTask implements Listener {
     /**
      * Constructs a new {@code HoverAnimationTask} instance.
      *
-     * @param orbs The orbs to be animated.
+     * @param plugin a reference to the main plugin class
      * @param hologram The hologram to display the animation.
      * @param seconds The number of seconds the animation should run.
      * @param player The player associated with the animation.
